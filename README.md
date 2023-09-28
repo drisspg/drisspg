@@ -28,8 +28,3 @@
 <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a>
 
 </p>
-
----
-
-![Driss' GitHub stats](https://github-readme-stats.vercel.app/api?username=drisspg&count_private=true&show_icons=true&theme=nord)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=drisspg&theme=nord)
