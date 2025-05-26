@@ -1,0 +1,58 @@
+name: Metrics
+on:
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
+  # Allow manual trigger
+  workflow_dispatch:
+  # Update on push to main
+  push: {branches: ["main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Generate isometric commit calendar
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: drisspg
+          template: classic
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # Generate starred repositories
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-starred.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: drisspg
+          template: classic
+          base: ""
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+      # Generate main profile metrics
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: drisspg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          
+          # Additional cool features
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: C
+          
+          # Languages activity
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
