@@ -23,17 +23,6 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # Generate starred repositories
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics-starred.svg
-          token: ${{ secrets.METRICS }}
-          user: drisspg
-          template: classic
-          base: ""
-          plugin_stars: yes
-          plugin_stars_limit: 4
-
       # Generate main profile metrics
       - uses: lowlighter/metrics@latest
         with:

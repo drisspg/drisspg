@@ -1,4 +1,3 @@
-# Howdy, I'm Driss Guessous 🤠
 <div align="center">
   <img src="https://github.com/drisspg/drisspg/blob/main/gifs/sponge_bob_howdy.gif" width="400">
 </div>
@@ -16,10 +15,6 @@
 
 <div align="center">
   <img src="./metrics-isocalendar.svg" alt="Isometric commit calendar" width="400">
-</div>
-
-<div align="center">
-  <img src="./metrics-starred.svg" alt="Recently starred repositories" width="400">
 </div>
 
 
