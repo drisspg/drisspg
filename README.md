@@ -22,7 +22,6 @@
   <img src="./metrics-starred.svg" alt="Recently starred repositories" width="400">
 </div>
 
-*Always keeping an eye on cool projects in the Rust, ML, and systems programming space!*
 
 <div align="center">
 
