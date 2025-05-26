@@ -5,7 +5,7 @@
 
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Machine+Learning+Engineer+at+Meta;PyTorch+Core+Team+Member;Volleyball+Player;Beach+Volleyball+Enthusiast&center=true&width=600&height=45)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Machine+Learning+Engineer+at+Meta;PyTorch+Core+Team+Member;Volleyball+Player;Wood+Worker&center=true&width=600&height=45)](https://git.io/typing-svg)
 
 </div>
 
