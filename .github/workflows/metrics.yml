@@ -16,7 +16,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics-isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS }}
           user: drisspg
           template: classic
           base: ""
@@ -27,7 +27,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics-starred.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS }}
           user: drisspg
           template: classic
           base: ""
@@ -38,7 +38,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS }}
           user: drisspg
           template: classic
           base: header, activity, community, repositories, metadata
